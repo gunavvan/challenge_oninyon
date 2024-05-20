@@ -71,21 +71,15 @@ class _LoginPageState extends State<LoginPage> {
                             color: Color.fromARGB(255, 31, 160, 201),
                           ))),
                   onPressed: () {
-                    // if(emailController.text == "test@oninyon.com" || passwordController.text == "T3stOninyon"){
-                    //   ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("berhasil Login")));
-                    //   Navigator.of(context).pushReplacement(
-                    //     MaterialPageRoute(
-                    //       builder: (context) =>
-                    //       const MainView(),
-                    //     ),
-                    //   );
-                    // }
-                    Navigator.of(context).pushReplacement(
-                      MaterialPageRoute(
-                        builder: (context) =>
-                        const MainView(),
-                      ),
-                    );
+                    if(emailController.text == "test@oninyon.com" || passwordController.text == "T3stOninyon"){
+                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("berhasil Login")));
+                      Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(
+                          builder: (context) =>
+                          const MainView(),
+                        ),
+                      );
+                    }
                   },
                   child: Padding(
                     padding: const EdgeInsets.all(15.0),
